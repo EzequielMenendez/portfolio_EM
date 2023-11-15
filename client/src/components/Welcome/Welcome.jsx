@@ -1,12 +1,15 @@
+import FotoEze from "../../utils/FotoEze.jpg"
+import { DivText, DivWelcome, ImgStyled } from "./StyledWelcome"
+
 const Welcome = ()=>{
     return(
-        <div>
-            <div>
+        <DivWelcome>
+            <DivText>
                 <h1>Ezequiel Menéndez</h1>
                 <h2>Full Stack Developer</h2>
-            </div>
-            <img></img>
-        </div>
+            </DivText>
+            <ImgStyled src={FotoEze}/>
+        </DivWelcome>
     )
 }
 
