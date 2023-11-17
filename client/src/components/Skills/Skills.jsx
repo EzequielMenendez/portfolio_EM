@@ -7,6 +7,7 @@ import ReactLogo from "../../utils/react-logo.png";
 import Henry from "../../utils/Diploma Henry.png";
 import UTN from "../../utils/Diploma UTN.png";
 import { DivCardSkill, DivContainerSkills, DivSkills, ImgCertificate, ImgSkill, PSkill } from "./StyledSkills";
+import { Fade, Slide } from "react-reveal";
 
 
 const Skills = ()=>{
@@ -28,20 +29,24 @@ const Skills = ()=>{
     return(
         <DivContainerSkills>
             <h2>Tecnologias Principales:</h2>
-            <DivSkills>
-                {technologies.map((t, i)=>(
-                    <DivCardSkill key={i}>
-                        <ImgSkill src={t.image}/>
-                        <PSkill>{t.text}</PSkill>
-                    </DivCardSkill>
-                ))}
-            </DivSkills>
+            <Fade left cascade>
+                <DivSkills>
+                    {technologies.map((t, i)=>(
+                        <DivCardSkill key={i}>
+                            <ImgSkill src={t.image}/>
+                            <PSkill>{t.text}</PSkill>
+                        </DivCardSkill>
+                    ))}
+                </DivSkills>
+            </Fade>
             <h2>Certificados</h2>
+            <Slide bottom cascade>
                 {certificates.map((c, i)=>(
                     <div key={i}>
                         <ImgCertificate src={c.image} alt={c.text}/>
                     </div>
                 ))}
+            </Slide>
         </DivContainerSkills>
     )
 }
