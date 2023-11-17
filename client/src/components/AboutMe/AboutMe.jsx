@@ -3,7 +3,7 @@ import { Slide } from "react-reveal"
 
 const AboutMe = ()=>{
     return (
-        <Slide left>
+        <Slide bottom>
             <DivAbout id="about">
                 <H2About>Sobre Mí</H2About>
                 <DivText>

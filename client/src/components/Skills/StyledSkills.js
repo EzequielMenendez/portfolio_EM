@@ -42,23 +42,6 @@ export const DivContainerSkills = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 45px;
-`
-
-export const ImgCertificate = styled.img`
-    max-width: 550px;
-    @media (max-width: 690px) {
-        max-width: 450px;
-    }
-    @media (max-width: 580px) {
-        max-width: 400px;
-    }
-    @media (max-width: 460px) {
-        max-width: 300px;
-    }
-    @media (max-width: 370px) {
-        max-width: 260px;
-    }
-    margin: 10px;
+    padding-top: 70px;
+    padding-bottom: 65px;
 `

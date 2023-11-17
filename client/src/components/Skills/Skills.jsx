@@ -4,10 +4,8 @@ import NodeJs from "../../utils/nodejs-icon.svg";
 import Php from "../../utils/php-logo.png";
 import Postgre from "../../utils/Postgresql_logo.png";
 import ReactLogo from "../../utils/react-logo.png";
-import Henry from "../../utils/Diploma Henry.png";
-import UTN from "../../utils/Diploma UTN.png";
-import { DivCardSkill, DivContainerSkills, DivSkills, ImgCertificate, ImgSkill, PSkill } from "./StyledSkills";
-import { Fade, Slide } from "react-reveal";
+import { DivCardSkill, DivContainerSkills, DivSkills, ImgSkill, PSkill } from "./StyledSkills";
+import { Fade } from "react-reveal";
 
 
 const Skills = ()=>{
@@ -20,11 +18,6 @@ const Skills = ()=>{
         { image: TypeScript, text: "TypeScript" },
         { image: Php, text: "PHP" },
     ];
-
-    const certificates = [
-        { image: Henry, text: "Certificado de Henry" },
-        { image: UTN, text: "Certificado de la UTN" }
-    ]
 
     return(
         <DivContainerSkills>
@@ -39,14 +32,6 @@ const Skills = ()=>{
                     ))}
                 </DivSkills>
             </Fade>
-            <h2>Certificados</h2>
-            <Slide bottom cascade>
-                {certificates.map((c, i)=>(
-                    <div key={i}>
-                        <ImgCertificate src={c.image} alt={c.text}/>
-                    </div>
-                ))}
-            </Slide>
         </DivContainerSkills>
     )
 }
