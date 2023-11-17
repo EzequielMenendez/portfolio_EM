@@ -1,5 +1,6 @@
 import Pokemon from "../../utils/VideoPokemonPage.mp4";
 import LifeCalendar from "../../utils/LifeCalendarVideo.mp4";
+import { Slide } from "react-reveal";
 import { Abutton, DivCardProyects, DivCenter, DivProyectContainer, H2Proyect, H4Proyect, PProyect, StyledVideoPlayer } from "./StyledProyect";
 
 const Proyects = () => {
@@ -15,6 +16,7 @@ const Proyects = () => {
             <H2Proyect>Proyectos</H2Proyect>
             <div>
                 {proyects.map((p, i)=>(
+                    <Slide left cascade>
                     <DivCardProyects key={i}>
                         <div>
                             <StyledVideoPlayer 
@@ -32,6 +34,7 @@ const Proyects = () => {
                             </DivCenter>
                         </div>
                     </DivCardProyects>
+                    </Slide>
                 ))}
             </div>
         </DivProyectContainer>

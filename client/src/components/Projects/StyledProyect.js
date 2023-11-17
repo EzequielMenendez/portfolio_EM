@@ -82,7 +82,7 @@ export const DivProyectContainer = styled.div`
 export const Abutton = styled.a`
     display: inline-block;
     padding: 10px 20px;
-    background-color: #9147ff;
+    background-color: #6650f8;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -91,6 +91,6 @@ export const Abutton = styled.a`
     transition: background-color 0.3s;
 
     &:hover {
-        background-color: #9610ba;
+        background-color: #4330ab;
     }
 `
