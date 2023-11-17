@@ -6,7 +6,7 @@ export const DivAbout = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    height: 70vh;
+    min-height: 67vh;
 `
 
 export const H2About = styled.h2`
@@ -28,5 +28,5 @@ export const PAbout = styled.p`
 `
 
 export const DivText = styled.div`
-    max-width: 65vw;
+    max-width: 62vw;
 `
