@@ -5,7 +5,8 @@ export const DivWelcome = styled.div`
     align-items: center;
     justify-content: center;
     gap: 5vh;
-    margin-top: 20vh;
+    height: 100vh;
+    width: 100vw;
 `
 
 export const ImgStyled = styled.img`
@@ -14,11 +15,12 @@ export const ImgStyled = styled.img`
     max-height: 248px;
     border-radius: 50%;
     border: solid 2px;
-    margin-top: 20px;
+    margin-bottom: 30px;
 `
 
 export const DivText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 `
