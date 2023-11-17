@@ -1,6 +1,6 @@
 import Pokemon from "../../utils/VideoPokemonPage.mp4";
 import LifeCalendar from "../../utils/LifeCalendarVideo.mp4";
-import { DivCardProyects, DivCenter, StyledVideoPlayer } from "./StyledProyect";
+import { Abutton, DivCardProyects, DivCenter, DivProyectContainer, H2Proyect, H4Proyect, PProyect, StyledVideoPlayer } from "./StyledProyect";
 
 const Proyects = () => {
 
@@ -11,8 +11,8 @@ const Proyects = () => {
     ]
 
     return (
-        <DivCenter>
-            <h2>Proyectos</h2>
+        <DivProyectContainer>
+            <H2Proyect>Proyectos</H2Proyect>
             <div>
                 {proyects.map((p, i)=>(
                     <DivCardProyects key={i}>
@@ -24,17 +24,17 @@ const Proyects = () => {
                         </div>
                         <div>
                             <DivCenter>
-                                <h4>{p.name}</h4>
+                                <H4Proyect>{p.name}</H4Proyect>
                             </DivCenter>
-                            <p>{p.description}</p>
+                            <PProyect>{p.description}</PProyect>
                             <DivCenter>
-                                <a href={p.link}>Repositorio</a>
+                                <Abutton href={p.link}>Repositorio</Abutton>
                             </DivCenter>
                         </div>
                     </DivCardProyects>
                 ))}
             </div>
-        </DivCenter>
+        </DivProyectContainer>
     )
 }
 

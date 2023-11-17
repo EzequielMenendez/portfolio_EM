@@ -51,6 +51,46 @@ export const DivCenter = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:3px;
-    margin-bottom: 3px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
+`
+
+export const H2Proyect = styled.h2`
+    font-size: 27px;
+    padding: 22px;
+`
+
+export const PProyect = styled.p`
+    background-color: #ffffff;
+    padding: 7px;
+    font-size: 16.5px;
+`
+
+export const H4Proyect = styled.h4`
+    background-color: #ffffff;
+    padding: 7px;
+    font-size: 18px;
+`
+
+export const DivProyectContainer = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+`
+
+export const Abutton = styled.a`
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9147ff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #9610ba;
+    }
 `
