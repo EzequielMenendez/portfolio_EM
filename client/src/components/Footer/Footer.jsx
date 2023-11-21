@@ -1,5 +1,6 @@
 import gitHub from "../../utils/githubLogo.png"
 import linkedin from "../../utils/linkedinLogo.png"
+import { Abutton, CardContainer, DivCardContact, FooterDiv, ImgContact } from "./SlyledFooter"
 
 const Footer = () => {
 
@@ -9,21 +10,21 @@ const Footer = () => {
     ]
     
     return(
-        <div>
+        <FooterDiv>
             <h2>Contactame</h2>
-            <div>
+            <CardContainer>
                 {contacts.map((c,i)=>(
-                    <div>
-                        <img src={c.logo}/>
-                        <a href={c.link}>{c.app}</a>
-                    </div>
+                    <DivCardContact>
+                        <ImgContact src={c.logo}/>
+                        <Abutton href={c.link}>{c.app}</Abutton>
+                    </DivCardContact>
                 ))}
-                <div>
-                    <img />
-                    <a>ezemenendez2003@gmail.com</a>
-                </div>
-            </div>
-        </div>
+                <DivCardContact>
+                    <ImgContact />
+                    <p>ezemenendez2003@gmail.com</p>
+                </DivCardContact>
+            </CardContainer>
+        </FooterDiv>
     )
 }
 
