@@ -58,6 +58,7 @@ export const DivCenter = styled.div`
 
 export const H2Proyect = styled.h2`
     font-size: 27px;
+    padding: 22px;
 `
 
 export const PProyect = styled.p`
