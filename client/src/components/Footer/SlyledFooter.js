@@ -7,10 +7,11 @@ export const CardContainer = styled.div`
     margin-bottom: 50px;
     gap: 40px;
     flex-wrap: wrap;
+    background-color: #ffffff
 `
 
 export const DivCardContact = styled.div`
-    background-color: #222222;
+    background-color: #f4f2ee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,4 +51,16 @@ export const FooterDiv = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #ffffff
+`
+
+export const H2Contact = styled.h2`
+    background-color: #ffffff;
+    font-size: 27px;
+    margin: 12px;
+`
+
+export const PContact = styled.p`
+    color: #6650f8;
+    font-size: 16px;
+    font-weight: bold;
 `
