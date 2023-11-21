@@ -6,7 +6,6 @@ export const DivWelcome = styled.div`
     justify-content: center;
     gap: 5vh;
     height: 100vh;
-    width: 100vw;
 `
 
 export const ImgStyled = styled.img`
