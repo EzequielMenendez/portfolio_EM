@@ -6,6 +6,9 @@ export const DivWelcome = styled.div`
     justify-content: center;
     gap: 5vh;
     height: 100vh;
+    @media (max-width: 610px) {
+        flex-direction: column;
+    }
 `
 
 export const ImgStyled = styled.img`
@@ -22,4 +25,11 @@ export const DivText = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    @media (max-width: 610px) {
+        margin-bottom: 0px;
+    }
+`
+
+export const H3Welcome = styled.h3`
+    color: #6650f8;
 `

@@ -1,5 +1,5 @@
 import FotoEze from "../../utils/FotoEze.jpg"
-import { DivText, DivWelcome, ImgStyled } from "./StyledWelcome"
+import { DivText, DivWelcome, H3Welcome, ImgStyled } from "./StyledWelcome"
 import {Fade} from 'react-reveal'
 
 const Welcome = ()=>{
@@ -8,7 +8,7 @@ const Welcome = ()=>{
             <DivWelcome>
                 <DivText>
                     <h1>Ezequiel Menéndez</h1>
-                    <h2>Full Stack Developer</h2>
+                    <H3Welcome>Full Stack Developer</H3Welcome>
                 </DivText>
                 <ImgStyled src={FotoEze}/>
             </DivWelcome>
