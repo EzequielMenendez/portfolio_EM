@@ -20,6 +20,14 @@ export const StyledVideoPlayer = styled(ReactPlayer)`
         width: 300px !important;
         height: 200px !important;
     }
+    @media (max-width: 350px) {
+        width: 280px !important;
+        height: 180px !important;
+    }
+    @media (max-width: 330px) {
+        width: 260px !important;
+        height: 170px !important;
+    }
 `;
 
 export const DivCardProyects = styled.div`
@@ -43,6 +51,14 @@ export const DivCardProyects = styled.div`
     }
     @media (max-width: 370px) {
         max-width: 300px;
+        width: auto;
+    }
+    @media (max-width: 350px) {
+        max-width: 280px;
+        width: auto;
+    }
+    @media (max-width: 330px) {
+        max-width: 270px;
         width: auto;
     }
 `

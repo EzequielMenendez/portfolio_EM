@@ -5,6 +5,10 @@ export const ImgSkill = styled.img`
     width: 90px;
     border-radius: 10px;
     background-color: #ffffff;
+    @media (max-width: 500px) {
+        height: 70px;
+        width: 70px;
+    }
 `
 
 export const DivSkills = styled.div`
@@ -16,6 +20,9 @@ export const DivSkills = styled.div`
     max-width: 70vw;
     margin-top: 30px;
     margin-bottom: 50px;
+    @media (max-width: 500px) {
+        max-width: 90vw;
+    }
 `
 
 export const DivCardSkill = styled.div`
@@ -30,6 +37,12 @@ export const DivCardSkill = styled.div`
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    @media (max-width: 500px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 `
 
 export const PSkill = styled.p`
