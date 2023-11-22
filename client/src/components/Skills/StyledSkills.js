@@ -29,6 +29,7 @@ export const DivCardSkill = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `
 
 export const PSkill = styled.p`

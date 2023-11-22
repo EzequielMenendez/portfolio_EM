@@ -29,19 +29,18 @@ export const ImgContact = styled.img`
 `
 
 export const Abutton = styled.a`
-    font-family: 'Helvetica Now Text', Arial, sans-serif;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fb5b0f;
+    background-color: #6650f8;
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Agrega una transición de color al botón */
+    transition: background-color 0.3s;
 
     &:hover {
-        background-color: #eb1839; /* Cambia el color de fondo al pasar el mouse */
+        background-color: #4330ab;
     }
 `
 
