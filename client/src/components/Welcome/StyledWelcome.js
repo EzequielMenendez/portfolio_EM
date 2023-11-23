@@ -5,7 +5,7 @@ export const DivWelcome = styled.div`
     align-items: center;
     justify-content: center;
     gap: 5vh;
-    height: 92vh;
+    height: 100vh;
     @media (max-width: 610px) {
         flex-direction: column;
     }

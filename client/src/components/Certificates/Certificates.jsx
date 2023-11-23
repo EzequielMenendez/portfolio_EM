@@ -12,7 +12,7 @@ const Certificates = () =>{
 
     return(
         <Slide bottom>
-            <DivCertificates>
+            <DivCertificates id="certificates">
                 <H2Cerificate>Certificados</H2Cerificate>
                 {certificates.map((c, i)=>(
                     <DivWhite key={i}>

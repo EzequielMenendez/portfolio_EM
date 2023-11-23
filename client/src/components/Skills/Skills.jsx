@@ -20,7 +20,7 @@ const Skills = ()=>{
     ];
 
     return(
-        <DivContainerSkills>
+        <DivContainerSkills id="skills">
             <h2>Tecnologias Principales:</h2>
             <Fade left cascade>
                 <DivSkills>

@@ -14,11 +14,11 @@ function NavBar() {
         <NavContainer>
             <h2>Ezequiel Menéndez</h2>
             <div className={`links ${clicked ? 'active' : ''}`}>
-                <a onClick={handleClick}>Sobre Mí</a>
-                <a onClick={handleClick}>Habilidades</a>
-                <a onClick={handleClick}>Certificados</a>
-                <a onClick={handleClick}>Proyectos</a>
-                <a onClick={handleClick}>Contactame</a>
+                <a onClick={handleClick} href="#about">Sobre Mí</a>
+                <a onClick={handleClick} href="#skills">Habilidades</a>
+                <a onClick={handleClick} href="#certificates">Certificados</a>
+                <a onClick={handleClick} href="#projects">Proyectos</a>
+                <a onClick={handleClick} href="#footer">Contactame</a>
             </div>
             <div className="burguer">
                 <BurgerButton clicked={clicked} handleClick={handleClick}/>

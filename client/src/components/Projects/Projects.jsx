@@ -12,7 +12,7 @@ const Proyects = () => {
     ]
 
     return (
-        <DivProyectContainer>
+        <DivProyectContainer id="projects">
             <H2Proyect>Proyectos</H2Proyect>
             <div>
                 {proyects.map((p, i)=>(
