@@ -4,8 +4,9 @@ import { Slide } from "react-reveal"
 
 const AboutMe = ()=>{
     return (
+        <div id="about">
         <Slide bottom>
-            <DivAbout id="about">
+            <DivAbout>
                 <DivInfo>
                     <H2About>Sobre Mí</H2About>
                     <DivText>
@@ -22,6 +23,7 @@ const AboutMe = ()=>{
                 </DivImg>
             </DivAbout>
         </Slide>
+        </div>
     )
 }
 

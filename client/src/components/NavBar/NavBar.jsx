@@ -9,16 +9,38 @@ function NavBar() {
         setClicked(!clicked)
     }
 
+    const smoothScrollToSection = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+        const navbarHeight = 80;
+    
+        if (targetElement) {
+          const offsetTop = targetElement.offsetTop - navbarHeight;
+    
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+    }
+
+    const handleLinkClick = (e, targetId) => {
+        e.preventDefault();
+        if(clicked){
+            setClicked(!clicked)
+        }
+        smoothScrollToSection(targetId);
+    }
+
     return (
         <>
         <NavContainer>
             <h2>Ezequiel Menéndez</h2>
             <div className={`links ${clicked ? 'active' : ''}`}>
-                <a onClick={handleClick} href="#about">Sobre Mí</a>
-                <a onClick={handleClick} href="#skills">Habilidades</a>
-                <a onClick={handleClick} href="#certificates">Certificados</a>
-                <a onClick={handleClick} href="#projects">Proyectos</a>
-                <a onClick={handleClick} href="#footer">Contactame</a>
+                <a onClick={(e) => handleLinkClick(e, 'about')} href="#about">Sobre Mí</a>
+                <a onClick={(e) => handleLinkClick(e, 'skills')} href="#skills">Habilidades</a>
+                <a onClick={(e) => handleLinkClick(e, 'certificates')} href="#certificates">Certificados</a>
+                <a onClick={(e) => handleLinkClick(e, 'projects')} href="#projects">Proyectos</a>
+                <a onClick={(e) => handleLinkClick(e, 'footer')} href="#footer">Contactame</a>
             </div>
             <div className="burguer">
                 <BurgerButton clicked={clicked} handleClick={handleClick}/>
