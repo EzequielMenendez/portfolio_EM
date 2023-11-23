@@ -27,7 +27,7 @@ export const NavContainer = styled.nav`
     }
     .links{
         z-index: 2;
-        width: 50%;
+        width: 65%;
         position: absolute;
         top: -700px;
         left: -2000px;
@@ -38,10 +38,11 @@ export const NavContainer = styled.nav`
         transition: all .6s ease;
         a{
             color: black;
-            font-size: 2rem;
+            font-size: 1.5rem;
             display: block;
         }
         @media(min-width: 768px){
+            width: none;
             position: initial;
             margin: 0;
             a{
