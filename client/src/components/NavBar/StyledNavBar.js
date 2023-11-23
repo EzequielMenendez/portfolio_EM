@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.nav`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
     background-color: #6650f8;
     padding: 2rem;
     display: flex;
@@ -16,19 +21,21 @@ export const NavContainer = styled.nav`
         background-color: #6650f8;
     }
     h2{
-        z-index: 2;
+        z-index: 3;
         background-color: #6650f8;
     }
     .burguer{
-        z-index: 2;
+        margin-right: 50px;
+        z-index: 3;
         @media(min-width: 768px){
             display:none
         }
     }
     .links{
-        z-index: 2;
+        z-index: 3;
         width: 65%;
         position: absolute;
+        margin-top: 100px;
         top: -700px;
         left: -2000px;
         right: 0;
@@ -37,7 +44,7 @@ export const NavContainer = styled.nav`
         text-align: center;
         transition: all .6s ease;
         a{
-            color: black;
+            color: white;
             font-size: 1.5rem;
             display: block;
         }
@@ -67,17 +74,17 @@ export const NavContainer = styled.nav`
             background-color: transparent;
             font-size: 1.5rem;
             margin-top: 1rem;
-            color: black;
+            color: white;
         }
     }
 `
 
 export const BgDiv = styled.div`
-    position: absolute;
+    position: fixed;
     background-color: #6650f8;
     top: -1000px;
     left: -1000px;
-    z-index: 1;
+    z-index: 2;
     border-radius: 0;
     width: 100%;
     height: 100%;
