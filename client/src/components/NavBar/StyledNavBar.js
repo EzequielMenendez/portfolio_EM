@@ -11,6 +11,9 @@ export const NavContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    h2{
+        padding-left: 5%;
+    }
     a {
         background-color: #6650f8;
         color: white;
