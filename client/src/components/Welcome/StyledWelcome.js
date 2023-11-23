@@ -9,6 +9,9 @@ export const DivWelcome = styled.div`
     @media (max-width: 610px) {
         flex-direction: column;
     }
+    h1{
+        font-size: 30px;
+    }
 `
 
 export const ImgStyled = styled.img`
