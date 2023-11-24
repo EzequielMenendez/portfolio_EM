@@ -22,15 +22,14 @@ export const DivSkills = styled.div`
     margin-bottom: 50px;
     @media (max-width: 500px) {
         max-width: 90vw;
+
     }
 `
 
 export const DivCardSkill = styled.div`
     background-color: #ffffff;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    width: 150px;
+    height: 150px;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -38,10 +37,8 @@ export const DivCardSkill = styled.div`
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     @media (max-width: 500px) {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 18px;
-        padding-bottom: 18px;
+        width: 140px;
+        height: 140px;
     }
 `
 
@@ -49,6 +46,9 @@ export const PSkill = styled.p`
     background-color: #ffffff;
     margin-top: 6px;
     font-size: 16.5px;
+    @media (max-width: 500px) {
+        font-size: 16px
+    }
 `
 
 export const DivContainerSkills = styled.div`
@@ -58,4 +58,9 @@ export const DivContainerSkills = styled.div`
     align-items: center;
     padding-top: 70px;
     padding-bottom: 65px;
+    @media (max-width: 500px) {
+        h2{
+            font-size: 22px;
+        }
+    }
 `
