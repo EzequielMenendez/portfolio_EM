@@ -8,6 +8,7 @@ import MongoDB from "../../utils/MongoDBLogo.png"
 import HTML from "../../utils/HTMLLogo.png"
 import CSS from "../../utils/CSSLogo.png"
 import Tailwind from "../../utils/TailwindLogo.png"
+import Next from '../../utils/NextLogo.png'
 import { DivCardSkill, DivContainerSkills, DivSkills, ImgSkill, PSkill } from "./StyledSkills";
 import { Fade } from "react-reveal";
 
@@ -24,7 +25,8 @@ const Skills = ()=>{
         { image: MongoDB, text: "Mongo DB"},
         { image: HTML, text: "HTML"},
         { image: CSS, text: "CSS"},
-        { image: Tailwind, text: "Tailwind"}
+        { image: Tailwind, text: "Tailwind"},
+        { image: Next, text: "Next.js"}
     ];
 
     return(
