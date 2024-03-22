@@ -9,6 +9,8 @@ import HTML from "../../utils/HTMLLogo.png"
 import CSS from "../../utils/CSSLogo.png"
 import Tailwind from "../../utils/TailwindLogo.png"
 import Next from '../../utils/NextLogo.png'
+import Go from '../../utils/GoLogo.png'
+import Svelte from '../../utils/SvelteLogo.png'
 import { DivCardSkill, DivContainerSkills, DivSkills, ImgSkill, PSkill } from "./StyledSkills";
 import { Fade } from "react-reveal";
 
@@ -26,7 +28,9 @@ const Skills = ()=>{
         { image: HTML, text: "HTML"},
         { image: CSS, text: "CSS"},
         { image: Tailwind, text: "Tailwind"},
-        { image: Next, text: "Next.js"}
+        { image: Next, text: "Next.js"},
+        { image: Go, text: "Golang"},
+        { image: Svelte, text: "Svelte"}
     ];
 
     return(

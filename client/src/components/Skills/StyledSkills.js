@@ -5,6 +5,7 @@ export const ImgSkill = styled.img`
     width: 90px;
     border-radius: 10px;
     background-color: #ffffff;
+    object-fit: contain;
     @media (max-width: 500px) {
         height: 70px;
         width: 70px;
