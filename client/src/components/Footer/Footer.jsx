@@ -12,7 +12,7 @@ const Footer = () => {
     
     return(
         <FooterDiv id="footer">
-            <H2Contact>Contactame</H2Contact>
+            <H2Contact>Contáctame</H2Contact>
             <CardContainer>
                 {contacts.map((c,i)=>(
                     <DivCardContact key={i}>

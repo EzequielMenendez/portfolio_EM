@@ -18,8 +18,8 @@ const Proyects = () => {
             <H2Proyect>Proyectos</H2Proyect>
             <div>
                 {proyects.map((p, i)=>(
-                    <Slide left cascade>
-                    <DivCardProyects key={i}>
+                    <Slide left cascade key={i}>
+                    <DivCardProyects>
                         <div>
                             <StyledVideoPlayer 
                             url={p.video}

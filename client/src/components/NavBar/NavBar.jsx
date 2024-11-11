@@ -37,6 +37,7 @@ function NavBar() {
             <h2>Ezequiel Menéndez</h2>
             <div className={`links ${clicked ? 'active' : ''}`}>
                 <a onClick={(e) => handleLinkClick(e, 'about')} href="#about">Sobre Mí</a>
+                <a onClick={(e) => handleLinkClick(e, 'exp')} href="#exp">Experiencia</a>
                 <a onClick={(e) => handleLinkClick(e, 'skills')} href="#skills">Habilidades</a>
                 <a onClick={(e) => handleLinkClick(e, 'certificates')} href="#certificates">Certificados</a>
                 <a onClick={(e) => handleLinkClick(e, 'projects')} href="#projects">Proyectos</a>

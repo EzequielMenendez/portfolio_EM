@@ -1,4 +1,4 @@
-import AboutMe from "./components/AboutMe/AboutMe"
+import Experience from "./components/Experience/Experience"
 import Certificates from "./components/Certificates/Certificates"
 import Footer from "./components/Footer/Footer"
 import NavBar from "./components/NavBar/NavBar"
@@ -11,7 +11,7 @@ function App() {
     <>
       <NavBar />
       <Welcome />
-      <AboutMe />
+      <Experience />
       <Skills />
       <Certificates />
       <Proyects />

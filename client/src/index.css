@@ -4,3 +4,7 @@
   scroll-behavior: smooth;
   font-family: Arial, sans-serif;
 }
+
+.react-reveal{
+  background-color: inherit;
+}
