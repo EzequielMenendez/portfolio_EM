@@ -22,6 +22,7 @@ export const DivCardExp = styled.div`
     display: flex;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    padding: 3px;
     @media (max-width: 550px) {
         width: 450px;
     }
@@ -68,5 +69,5 @@ export const DivTextExp = styled.div`
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
+    padding-left: 2px;
 `
