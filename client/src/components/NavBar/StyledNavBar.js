@@ -46,10 +46,27 @@ export const NavContainer = styled.nav`
         margin-right: auto;
         text-align: center;
         transition: all .6s ease;
-        a{
+        a {
             color: white;
             font-size: 1.5rem;
             display: block;
+            position: relative;
+            text-decoration: none;
+            padding-bottom: 2px;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.5s ease;
+            border-radius: 3px;
+        }
+        a:hover::after {
+            width: 100%; /* Extiende el subrayado a todo el ancho */
         }
         @media(min-width: 768px){
             width: none;

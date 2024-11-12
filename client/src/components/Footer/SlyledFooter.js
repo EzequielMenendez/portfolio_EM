@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
     margin-bottom: 50px;
     gap: 40px;
     flex-wrap: wrap;
-    background-color: #ffffff
+    background-color: #ffffff;
 `
 
 export const DivCardContact = styled.div`
@@ -49,7 +49,7 @@ export const FooterDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff
+    background-color: #ffffff;
 `
 
 export const H2Contact = styled.h2`
@@ -62,4 +62,26 @@ export const PContact = styled.p`
     color: #6650f8;
     font-size: 16px;
     font-weight: bold;
+`
+
+export const ACvContact = styled.a`
+    margin-bottom: 50px;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #6650f8;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6650f8;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+        background-color: #4330ab;
+        color: #fff
+    }
 `

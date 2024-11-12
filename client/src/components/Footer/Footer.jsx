@@ -1,7 +1,8 @@
 import gitHub from "../../utils/githubLogo.png"
 import linkedin from "../../utils/linkedinLogo.png"
 import gmail from "../../utils/gmailLogo.png"
-import { Abutton, CardContainer, DivCardContact, FooterDiv, H2Contact, ImgContact, PContact } from "./SlyledFooter"
+import CV from "../../utils/EzequielMenéndez-CV.pdf"
+import { Abutton, ACvContact, CardContainer, DivCardContact, FooterDiv, H2Contact, ImgContact, PContact } from "./SlyledFooter"
 
 const Footer = () => {
 
@@ -26,6 +27,7 @@ const Footer = () => {
                     <PContact>@gmail.com</PContact>
                 </DivCardContact>
             </CardContainer>
+            <ACvContact href={CV} download="EzequielMenéndez-CV.pdf">Descargar CV</ACvContact>
         </FooterDiv>
     )
 }
